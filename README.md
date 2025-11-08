@@ -1,13 +1,12 @@
 # 🥥 Thenga Lang
 
-**Malayalam Programming Language with Movie Meme Vibes**
+**Manglish Programming Language**
 
 Thenga Lang is a fun, lightweight programming language inspired by Malayalam language and Malayalam movie culture. Built with Node.js, it brings the flavor of Kerala to programming!
 
 ## 🚀 Features
 
 - **Malayalam Syntax**: Write code in Malayalam-inspired keywords
-- **Movie References**: Special functions inspired by iconic Malayalam movie dialogues
 - **Full-Featured**: Variables, functions, loops, conditionals, error handling
 - **Interactive REPL**: Test your code instantly
 - **npm Installable**: Easy to install and use
@@ -211,7 +210,7 @@ try_cheyth_nokk {
 }
 ```
 
-### Special Functions (Movie References!)
+### Special Functions
 
 ```javascript
 nee_po_mone_dinesha(x);      // Delete variable (CID Moosa ref)
