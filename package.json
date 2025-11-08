@@ -1,0 +1,32 @@
+{
+  "name": "thenga-lang",
+  "version": "1.0.0",
+  "description": "Fun Malayalam Progrmming Language 🥥",
+  "main": "src/index.js",
+  "bin": {
+    "thenga": "bin/thenga.js"
+  },
+  "scripts": {
+    "test": "jest",
+    "start": "node bin/thenga.js",
+    "repl": "node bin/thenga.js repl"
+  },
+  "keywords": [
+    "malayalam",
+    "programming-language",
+    "interpreter",
+    "thenga"
+  ],
+  "author": "VASIL K H",
+  "license": "MIT",
+  "dependencies": {
+    "commander": "^11.1.0",
+    "chalk": "^4.1.2"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  }
+}

@@ -1,0 +1,303 @@
+// ============================================
+// hello.thenga - Simple Hello World
+// ============================================
+// ingane aan Basic hello world program
+
+para("Enthaada mone!");
+para("Welcome to Thenga Lang 🥥");
+
+
+// ============================================
+// variables.thenga - Variable Examples
+// ============================================
+// ingane aan Variables and constants
+
+ith_aan name = "Machane";
+ith_aan age = 25;
+ith_fixed_aan PI = 3.14159;
+
+para("Name: " + name);
+para("Age: " + age);
+para("PI value: " + PI);
+
+// Check typeof
+enthada_ith(name);
+enthada_ith(age);
+
+
+// ============================================
+// math.thenga - Math Operations
+// ============================================
+// ingane aan Math operations
+
+ith_aan a = 10;
+ith_aan b = 5;
+
+para("Addition: " + koottu(a, b));
+para("Subtraction: " + kurakku(a, b));
+para("Multiplication: " + gunikku(a, b));
+para("Division: " + harikku(a, b));
+
+ith_aan result = (a + b) * 2;
+para("Result: " + result);
+
+
+// ============================================
+// conditionals.thenga - If-Else Examples
+// ============================================
+// ingane aan Conditional statements
+
+ith_aan score = 85;
+
+seriyano(score velliyathum_same 90) {
+    para("Grade: A - Adipoli aan!");
+} allelum(score velliyathum_same 75) {
+    para("Grade: B - Nalla performance!");
+} allelum(score velliyathum_same 60) {
+    para("Grade: C - Decent machan");
+} allengil {
+    para("Grade: F - Padikkanam mone!");
+}
+
+
+// ============================================
+// loops.thenga - Loop Examples
+// ============================================
+// ingane aan Loops in Thenga Lang
+
+para("For loop example:");
+repeat_adi(5) {
+    para("Iteration: " + i);
+}
+
+para("\nWhile loop example:");
+ith_aan counter = 0;
+odi_repeat_mwone(counter cheriya 3) {
+    para("Counter: " + counter);
+    counter = counter + 1;
+}
+
+
+// ============================================
+// functions.thenga - Function Examples
+// ============================================
+// ingane aan Functions
+
+pani greet(name) {
+    thirich_tha("Hello, " + name + "!");
+}
+
+pani add_numbers(x, y) {
+    ith_aan sum = x + y;
+    thirich_tha(sum);
+}
+
+pani factorial(n) {
+    seriyano(n cheriyathum_same 1) {
+        thirich_tha(1);
+    }
+    thirich_tha(n * factorial(n - 1));
+}
+
+para(greet("Mone"));
+para("Sum: " + add_numbers(10, 20));
+para("Factorial of 5: " + factorial(5));
+
+
+// ============================================
+// arrays.thenga - Array Examples
+// ============================================
+// ingane aan Working with arrays
+
+ith_aan fruits = ["Apple", "Banana", "Mango", "Orange"];
+para("First fruit: " + fruits[0]);
+para("Last fruit: " + fruits[3]);
+
+ith_aan numbers = [1, 2, 3, 4, 5];
+para("Numbers: " + numbers);
+
+// Array operations
+repeat_adi(length(numbers)) {
+    para("Number at index " + i + ": " + numbers[i]);
+}
+
+
+// ============================================
+// objects.thenga - Object Examples
+// ============================================
+// ingane aan Working with objects
+
+ith_aan person = {
+    name: "Rajesh",
+    age: 30,
+    city: "Kochi"
+};
+
+para("Name: " + person.name);
+para("Age: " + person.age);
+para("City: " + person.city);
+
+person.age = 31;
+para("Updated age: " + person.age);
+
+
+// ============================================
+// strings.thenga - String Operations
+// ============================================
+// ingane aan String manipulation
+
+ith_aan text = "Hello World";
+para("Original: " + text);
+
+ith_aan words = split_pannuda(text, " ");
+para("Split words: " + words);
+
+ith_aan joined = join_pannuda(words, "-");
+para("Joined: " + joined);
+
+ith_aan messy = "  spaces  ";
+para("Trimmed: '" + trim_pannuda(messy) + "'");
+
+ith_aan combined = kooti_vekkada("Thenga", " ", "Lang");
+para("Concatenated: " + combined);
+
+
+// ============================================
+// error_handling.thenga - Try-Catch Example
+// ============================================
+// ingane aan Error handling
+
+try_cheyth_nokk {
+    para("Trying something risky...");
+    theri_vili("Oops! Something went wrong!");
+    para("This won't execute");
+} pidikk(error) {
+    para("Caught error: " + error);
+} ettavum_avasanam {
+    para("Cleanup code here");
+}
+
+
+// ============================================
+// assertions.thenga - Assert & Validate
+// ============================================
+// ingane aan Assertions and validations
+
+ith_aan value = 42;
+adipoli_aan(value velliya 0);
+para("Value is positive - check passed!");
+
+ith_aan user = {name: "John", age: 25};
+seriyano(aalu_sheri_aano(user)) {
+    para("User object is valid");
+}
+
+seriyano(ner_aano_mwone(value)) {
+    para("Value is truthy!");
+}
+
+
+// ============================================
+// movie_refs.thenga - Movie Reference Functions
+// ============================================
+// ingane aan Special Malayalam movie reference functions
+
+ith_aan temp_var = "temporary data";
+para("Before delete: " + temp_var);
+nee_po_mone_dinesha(temp_var);
+para("Variable deleted using CID Moosa reference!");
+
+kett_paranju("This is a warning message");
+
+ith_aan data_type = ithenthonn(42);
+para("Type of 42: " + data_type);
+
+ith_aan original = [1, 2, 3];
+ith_aan copied = copy_adi(original);
+para("Copied array: " + copied);
+
+chumma_iri_mone;
+para("Pass statement executed - did nothing!");
+
+
+// ============================================
+// fibonacci.thenga - Complete Program
+// ============================================
+// ingane aan Fibonacci sequence generator
+
+pani fibonacci(n) {
+    seriyano(n cheriyathum_same 1) {
+        thirich_tha(0);
+    }
+    seriyano(n same_aano 2) {
+        thirich_tha(1);
+    }
+    thirich_tha(fibonacci(n - 1) + fibonacci(n - 2));
+}
+
+para("Fibonacci Sequence:");
+repeat_adi(10) {
+    para("F(" + i + ") = " + fibonacci(i + 1));
+}
+
+
+// ============================================
+// calculator.thenga - Simple Calculator
+// ============================================
+// ingane aan Simple calculator program
+
+pani calculate(a, b, operation) {
+    seriyano(operation same_aano "add") {
+        thirich_tha(koottu(a, b));
+    } allelum(operation same_aano "subtract") {
+        thirich_tha(kurakku(a, b));
+    } allelum(operation same_aano "multiply") {
+        thirich_tha(gunikku(a, b));
+    } allelum(operation same_aano "divide") {
+        seriyano(b same_aano 0) {
+            theri_vili("Cannot divide by zero mone!");
+        }
+        thirich_tha(harikku(a, b));
+    } allengil {
+        theri_vili("Invalid operation!");
+    }
+}
+
+para("Calculator Demo:");
+para("10 + 5 = " + calculate(10, 5, "add"));
+para("10 - 5 = " + calculate(10, 5, "subtract"));
+para("10 * 5 = " + calculate(10, 5, "multiply"));
+para("10 / 5 = " + calculate(10, 5, "divide"));
+
+
+// ============================================
+// prime_checker.thenga - Prime Number Checker
+// ============================================
+// ingane aan Check if number is prime
+
+pani is_prime(n) {
+    seriyano(n cheriyathum_same 2) {
+        thirich_tha(sheriyalla);
+    }
+    
+    ith_aan i = 2;
+    odi_repeat_mwone(i cheriya n) {
+        seriyano((n % i) same_aano 0) {
+            thirich_tha(sheriyalla);
+        }
+        i = i + 1;
+    }
+    
+    thirich_tha(sheriya);
+}
+
+para("Prime number checker:");
+ith_aan test_numbers = [2, 3, 4, 5, 10, 17, 20];
+repeat_adi(length(test_numbers)) {
+    ith_aan num = test_numbers[i];
+    seriyano(is_prime(num)) {
+        para(num + " is prime - Adipoli!");
+    } allengil {
+        para(num + " is not prime");
+    }
+}

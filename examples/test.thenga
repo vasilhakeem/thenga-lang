@@ -1,0 +1,28 @@
+// ingane aan Simple test program
+
+para("=== Thenga Lang Test ===");
+
+ith_aan name = "Machan";
+ith_aan age = 25;
+
+para("Name: " + name);
+para("Age: " + age);
+
+seriyano(age velliya 18) {
+    para("Adult aanu mone!");
+}
+
+repeat_adi(3) {
+    para("Loop iteration: " + i);
+}
+
+pani greet(person) {
+    thirich_tha("Hello " + person + "!");
+}
+
+para(greet(name));
+
+ith_aan numbers = [10, 20, 30];
+para("First number: " + numbers[0]);
+
+para("=== Test Complete! ===");
